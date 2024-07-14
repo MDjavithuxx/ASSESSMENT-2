@@ -1,0 +1,55 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling with CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        h1 {
+            color: navy;
+            text-align: center;
+        }
+
+        /* Class Selector */
+        .section {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+            color: red;
+        }
+
+        /* Pseudo-element Selector */
+        p::first-line {
+            font-weight: bold;
+        }
+
+        /* ID Selector */
+        #unique {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CSS Selector Example</h1>
+
+    <div class="section">
+        <p>This is a paragraph inside a section.</p>
+        <p>This is another paragraph inside the same section.</p>
+    </div>
+
+    <div class="section">
+        <p>This is a paragraph inside another section.</p>
+        <p id="unique">This paragraph has an ID.</p>
+    </div>
+
+    <div class="section">
+        <p>This is a paragraph inside a third section.</p>
+        <a href="#">Link to somewhere</a>
+    </div>
+</body>
+</html>
